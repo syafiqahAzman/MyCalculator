@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:stretchColumns="*"
+        tools:context=".MainActivity">
+
+    <TableRow
+            android:id="@+id/row1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#555555"
+            android:layout_weight="1"
+    >
+        <TextView
+                android:id="@+id/tvCal"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_span="5"
+                android:layout_marginTop="100dp"
+                android:gravity="right"
+                android:paddingRight="50dp"
+                android:textColor="#ffffff"
+                android:text="0"
+                android:textSize="50dp"
+
+
+        />
+
+    </TableRow>
+    <TableRow
+            android:id="@+id/row2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    >
+        <Button
+                android:id="@+id/btnAC"
+                android:background="@drawable/rect2"
+                android:layout_span="3"
+                android:text="@string/ac"
+                android:onClick="btnOnClickClear"
+        />
+        <Button
+                android:id="@+id/btnSlash"
+                android:background="@drawable/rectangle"
+                android:layout_span="2"
+                android:onClick="btnOnClickMath"
+                android:text="/"/>
+
+    </TableRow>
+    <TableRow
+            android:id="@+id/row3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    >
+
+        <Button
+                android:id="@+id/btn7"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="7"/>
+        <Button
+                android:id="@+id/btn8"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="8"/>
+        <Button
+                android:id="@+id/btn9"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="9"/>
+        <Button
+                android:id="@+id/btnStar"
+                android:background="@drawable/rectangle"
+                android:onClick="btnOnClickMath"
+                android:layout_span="2"
+                android:text="*"/>
+
+    </TableRow>
+    <TableRow
+            android:id="@+id/row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    >
+
+        <Button
+                android:id="@+id/btn4"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="4"/>
+        <Button
+                android:id="@+id/btn5"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="5"/>
+        <Button
+                android:id="@+id/btn6"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="6"/>
+        <Button
+                android:id="@+id/btnMinus"
+                android:background="@drawable/rectangle"
+                android:onClick="btnOnClickMath"
+                android:layout_span="2"
+                android:text="-"/>
+
+    </TableRow>
+    <TableRow
+            android:id="@+id/row5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    >
+        <Button
+                android:id="@+id/btn1"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="1"/>
+        <Button
+                android:id="@+id/btn2"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="2"/>
+        <Button
+                android:id="@+id/btn3"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="3"/>
+        <Button
+                android:id="@+id/btnPlus"
+                android:background="@drawable/rectangle"
+                android:onClick="btnOnClickMath"
+                android:layout_span="2"
+                android:text="+"/>
+
+    </TableRow>
+    <TableRow
+            android:id="@+id/row6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+    >
+        <Button
+                android:id="@+id/btn0"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:layout_span="2"
+                android:text="0"/>
+
+        <Button
+                android:id="@+id/btnDot"
+                android:background="@drawable/rect2"
+                android:onClick="btnOnClick"
+                android:text="."/>
+        <Button
+                android:id="@+id/btnEqual"
+                android:background="@drawable/rectangle"
+                android:onClick="btnOnClickResult"
+                android:layout_span="2"
+                android:text="="/>
+
+    </TableRow>
+
+
+</TableLayout>
